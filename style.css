@@ -29,8 +29,12 @@ body {
    /* background: linear-gradient(to right, #DD2476, #FF512F); */
    /* Chrome 10-25, Safari 5.1-6 */
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
-   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+   /* background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+   background: #1A2980;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .h1 {
@@ -89,7 +93,7 @@ footer p span {
 }
 .products{
    display: grid;
-   grid-template-columns:repeat(3, 400px);
+   grid-template-columns:repeat(3, 200px);
    grid-template-rows:repeat(3,auto) ;
    align-items: center;
    justify-content: center;
@@ -107,8 +111,12 @@ footer p span {
 }
 img{
    width: 100%;
-   max-width: 200px;
-   height: 200px;
+   object-fit: fill;
+   height: auto;
+   width: 100%;
+   /* ma; */
+   /* max-width: 250px;
+   height: 250px; */
    /* max-height: 100px; */
    /* max-width: 50%; */
    /* width: 100%; */
